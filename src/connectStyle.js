@@ -79,19 +79,19 @@ export default (componentStyleName, componentStyle = {}, mapPropsToStyleNames, o
       static contextTypes = {
         theme: ThemeShape,
         // The style inherited from the parent
-        parentStyle: PropTypes.object,
+        parentStyle: PropTypes.any,
         transformProps: PropTypes.func,
       };
 
       static childContextTypes = {
         // Provide the parent style to child components
-        parentStyle: PropTypes.object,
+        parentStyle: PropTypes.any,
         transformProps: PropTypes.func,
       };
 
       static propTypes = {
         // Element style that overrides any other style of the component
-        style: PropTypes.object,
+        style: PropTypes.any,
         // The style variant names to apply to this component,
         // multiple variants may be separated with a space character
         styleName: PropTypes.string,
